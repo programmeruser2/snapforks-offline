@@ -1,0 +1,28 @@
+{
+  "name": "snapforks-offline",
+  "version": "1.0.0",
+  "description": "Snapforks Offline",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder -wml",
+    "dist:win": "electron-builder --win",
+    "dist:mac": "electron-builder --mac",
+    "dist:linux": "electron-builder --linux",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "keywords": [],
+  "author": "SnapForks Contributors",
+  "license": "ISC",
+  "build": {
+    "appId": "SnapForks Offline",
+    "mac": {
+      "category": "productivity"
+    }
+  },
+  "devDependencies": {
+    "electron": "^11.0.3",
+    "electron-builder": "^22.9.1"
+  }
+}
